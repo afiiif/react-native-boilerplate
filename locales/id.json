@@ -1,0 +1,6 @@
+{
+  "test": "Tulisan ini ditulis dalam bahasa Indonesia",
+  "some-nested-obj": {
+    "with-variable": "Halo %{name}, apa kabar?"
+  }
+}

@@ -8,6 +8,7 @@ import {
   DebugInstructions, ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import tw from 'tailwind-rn';
+import useTranslation from '../hooks/use-translation';
 import useStore from '../store';
 
 const checkState = () => {
@@ -16,7 +17,7 @@ const checkState = () => {
 };
 
 export default function Home() {
-  const [language, setLanguage] = useStore((state) => [state.language, state.setLanguage]);
+  const { language, setLanguage, t } = useTranslation();
   const [token, setToken] = useStore((state) => [state.token, state.setToken]);
 
   return (
@@ -38,7 +39,7 @@ export default function Home() {
               <Text style={tw(language === 'id' ? 'text-blue-500' : 'text-black')}>[ ID ]</Text>
             </TouchableOpacity>
           </View>
-          <Text style={tw('mt-4')}>Token: {token}</Text>
+          <Text style={tw('mt-4')}>Token: {token ?? '-'}</Text>
           <View style={tw('flex flex-row')}>
             <TouchableOpacity style={tw('mr-2')} onPress={() => setToken('some-token')}>
               <Text>[ Set Token ]</Text>
@@ -50,6 +51,12 @@ export default function Home() {
           <TouchableOpacity onPress={checkState} style={tw('mt-6 self-start px-4 py-2 rounded bg-blue-500')}>
             <Text style={tw('text-white')}>Call State Outside Component</Text>
           </TouchableOpacity>
+        </View>
+
+        <View style={tw('py-8 px-6 border-b border-blue-500')}>
+          <Text style={tw('font-bold')}>i18n test:</Text>
+          <Text style={tw('italic')}>{t('test')}</Text>
+          <Text style={tw('italic')}>{t('some-nested-obj.with-variable', { name: 'React.js' })}</Text>
         </View>
 
         <View style={styles.sectionContainer}>

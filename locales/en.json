@@ -1,0 +1,6 @@
+{
+  "test": "This statement is written in english",
+  "some-nested-obj": {
+    "with-variable": "Hello %{name}, how are you?"
+  }
+}
