@@ -1,6 +1,14 @@
 {
-  "test": "This statement is written in english",
+  "test": "This statement is written in english.",
   "some-nested-obj": {
     "with-variable": "Hello %{name}, how are you?"
+  },
+  "login": {
+    "header": "Login",
+    "paragraph": "Don't have account?"
+  },
+  "signup": {
+    "header": "Sign Up",
+    "paragraph": "Already have account?"
   }
 }

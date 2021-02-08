@@ -1,6 +1,14 @@
 {
-  "test": "Tulisan ini ditulis dalam bahasa Indonesia",
+  "test": "Tulisan ini ditulis dalam bahasa Indonesia.",
   "some-nested-obj": {
     "with-variable": "Halo %{name}, apa kabar?"
+  },
+  "login": {
+    "header": "Masuk",
+    "paragraph": "Belum punya akun?"
+  },
+  "signup": {
+    "header": "Daftar",
+    "paragraph": "Sudah punya akun?"
   }
 }
