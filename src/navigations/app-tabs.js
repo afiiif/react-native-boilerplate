@@ -2,6 +2,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { getColor } from 'tailwind-rn';
 
 import HomeStacks from './home-stacks';
 import Search from '../screens/search';
@@ -14,7 +15,7 @@ export default function AppTabs() {
   return (
     <Tab.Navigator
       tabBarOptions={{
-        activeTintColor: 'tomato',
+        activeTintColor: getColor('blue-600'),
         inactiveTintColor: 'gray',
       }}
     >
@@ -23,6 +24,7 @@ export default function AppTabs() {
         component={HomeStacks}
         options={{
           tabBarIcon: ({ color }) => <Icon name="home" color={color} size={24} />,
+          tabBarLabel: 'Home',
         }}
       />
       <Tab.Screen

@@ -1,11 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import tw from 'tailwind-rn';
+import CartSection from '../components/sections/examples/cart-section';
 
 export default function Cart() {
   return (
-    <View style={tw('p-5')}>
-      <Text style={tw('text-lg font-bold mb-6')}>Cart</Text>
-    </View>
+    <CartSection />
   );
 }

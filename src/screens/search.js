@@ -1,11 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import tw from 'tailwind-rn';
+import SearchSection from '../components/sections/examples/search-section';
 
 export default function Search() {
   return (
-    <View style={tw('p-5')}>
-      <Text style={tw('text-lg font-bold mb-6')}>Search</Text>
-    </View>
+    <SearchSection />
   );
 }
