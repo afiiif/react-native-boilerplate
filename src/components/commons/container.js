@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View } from 'react-native';
-import tw from 'tailwind-rn';
+import tw from '../../../tailwind';
 
 export default function Container({ children, style }) {
   return (

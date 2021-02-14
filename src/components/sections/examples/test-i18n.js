@@ -1,7 +1,7 @@
 import React from 'react';
-import tw from 'tailwind-rn';
 import useTranslation from '../../../hooks/use-translation';
 import { Container, H2, Text } from '../../commons';
+import tw from '../../../../tailwind';
 
 export default function TestI18n() {
   const { t } = useTranslation();

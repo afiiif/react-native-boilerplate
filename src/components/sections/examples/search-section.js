@@ -1,6 +1,6 @@
 import React from 'react';
-import tw from 'tailwind-rn';
 import { Container, H1 } from '../../commons';
+import tw from '../../../../tailwind';
 
 export default function SearchSection() {
   return (

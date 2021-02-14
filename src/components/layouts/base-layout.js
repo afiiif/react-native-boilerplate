@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { SafeAreaView, StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import tw from 'tailwind-rn';
+import tw from '../../../tailwind';
 
 export default function BaseLayout({ children }) {
   return (

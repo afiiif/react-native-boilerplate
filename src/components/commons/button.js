@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as ButtonRNE } from 'react-native-elements';
-import tw from 'tailwind-rn';
+import tw from '../../../tailwind';
 
 export default function Button({
   title, style, onPress, ...props
 }) {
   return (
     <ButtonRNE
-      buttonStyle={[tw('bg-blue-600 rounded'), style]}
+      buttonStyle={[tw('bg-primary rounded'), style]}
       onPress={onPress}
       title={title}
       {...props}

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Text, TouchableWithoutFeedback } from 'react-native';
-import tw from 'tailwind-rn';
+import tw from '../../../../tailwind';
 
 export default function TextLink({ children, onPress, style }) {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
-      <Text style={[tw('text-blue-600'), style]}>{children}</Text>
+      <Text style={[tw('text-primary'), style]}>{children}</Text>
     </TouchableWithoutFeedback>
   );
 }

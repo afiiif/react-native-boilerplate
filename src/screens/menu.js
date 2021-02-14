@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
-import tw from 'tailwind-rn';
 import LangSwither from '../components/sections/lang-swither';
 import { Container, H1 } from '../components/commons';
 import TestI18n from '../components/sections/examples/test-i18n';
 import TestLogout from '../components/sections/examples/test-logout';
+import tw from '../../tailwind';
 
 export default function Menu() {
   return (

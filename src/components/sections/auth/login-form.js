@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import tw from 'tailwind-rn';
+import useTranslation from '../../../hooks/use-translation';
 import {
   Button, Container, H1, Text, TextLink,
 } from '../../commons';
 import { InputText } from '../../forms';
-import useTranslation from '../../../hooks/use-translation';
+import tw from '../../../../tailwind';
 
 export default function LoginForm({ onSubmit }) {
   const navigation = useNavigation();

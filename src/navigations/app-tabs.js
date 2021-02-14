@@ -2,8 +2,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { getColor } from 'tailwind-rn';
 
+import { getColor } from '../../tailwind';
 import HomeStacks from './home-stacks';
 import Search from '../screens/search';
 import Cart from '../screens/cart';
@@ -15,7 +15,7 @@ export default function AppTabs() {
   return (
     <Tab.Navigator
       tabBarOptions={{
-        activeTintColor: getColor('blue-600'),
+        activeTintColor: getColor('primary'),
         inactiveTintColor: 'gray',
       }}
     >
