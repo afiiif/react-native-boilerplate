@@ -1,3 +1,3 @@
 *.pbxproj -text
-* text eol=lf
-*.ttf binary
+*.js eol=lf
+*.json eol=lf
