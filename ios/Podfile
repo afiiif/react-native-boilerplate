@@ -8,6 +8,10 @@ target 'MyApp' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'RNSentry', :path => '../node_modules/@sentry/react-native'
+
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
   target 'MyAppTests' do
     inherit! :complete
     # Pods for testing
