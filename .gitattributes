@@ -6,3 +6,4 @@
 *.html eol=lf
 *.css eol=lf
 *.scss eol=lf
+*.md eol=lf
