@@ -8,15 +8,15 @@ export default function Button({
 }) {
   const styleBySize = {
     sm: {
-      button: 'rounded-md h-8',
+      button: 'rounded-md h-8 px-5',
       title: 'text-xxs',
     },
     md: {
-      button: 'rounded-lg h-12',
+      button: 'rounded-lg h-12 px-5',
       title: 'text-base',
     },
     lg: {
-      button: 'rounded-lg h-14',
+      button: 'rounded-lg h-14 px-5',
       title: 'text-lg',
     },
   }[size];
@@ -38,7 +38,7 @@ export default function Button({
 
   return (
     <ButtonRNE
-      buttonStyle={tw(styleBySize.button, styleByType.button)}
+      buttonStyle={[tw(styleBySize.button, styleByType.button), style]}
       titleStyle={tw(styleBySize.title, styleByType.title)}
       disabledStyle={[tw(styleByType.disabledButton), { borderColor: getColor('primary opacity-50') }]}
       disabledTitleStyle={tw(styleByType.disabledTitle)}
