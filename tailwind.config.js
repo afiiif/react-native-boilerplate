@@ -19,6 +19,10 @@ module.exports = {
           9: '#f4f6f9',
         },
       },
+      fontSize: {
+        xxxs: '9px',
+        xxs: '11px',
+      },
     },
   },
   variants: {

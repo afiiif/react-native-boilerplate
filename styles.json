@@ -1869,6 +1869,12 @@
 		"fontSize": 36,
 		"lineHeight": 40
 	},
+	"text-xxxs": {
+		"fontSize": 9
+	},
+	"text-xxs": {
+		"fontSize": 11
+	},
 	"leading-3": {
 		"lineHeight": 12
 	},
